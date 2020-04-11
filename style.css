@@ -1,0 +1,290 @@
+/*------global ------*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+html {
+    font-family: lato;
+}
+
+body {
+    width: 100%;
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: 550;
+    color: #2b9dff;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.btn-outline {
+    display: block;
+    text-decoration: none;
+    color: #2b9dff;
+    border: 2px solid #2b9dff;
+    border-radius: 6px;
+    width: 175px;
+    height: 53px;
+    line-height: 53px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn-outline:hover{
+    font-size: 21px;
+    opacity: 50%;
+    background-color: #2b9dff;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-filled {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: #2b9dff;
+    border-radius: 6px;
+    width: 175px;
+    height: 53px;
+    line-height: 53px;
+    text-align: center;
+    margin-top: 30px;
+}
+.btn-filled:hover {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/*----nav------*/
+
+nav {
+    display: flex;
+    padding: 35px 0;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #202427;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+nav a img {
+    /*vertical-align: middle;*/
+}
+
+nav a img:hover {
+    opacity: 70%;
+    border-radius: 1000px;
+}
+
+nav a span {
+    color: white;
+    background-color: #2b9dff;
+    border-radius: 1000px;
+    padding: 3px 12px;
+    margin-left: 10px;
+}
+
+/*----nav------*/
+header {
+    height: 950px;
+    min-height: 950px;
+    padding: 0 5%;
+    background-image: url(images/background_header.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom right;
+    overflow: hidden;
+}
+
+header h1 {
+    width: 40%;
+    margin: 30px 0 0 0 ;
+}
+/*----team------*/
+.team {
+    text-align: center;
+    margin: 20px 0 20px 0 ;
+    padding: 0 5%;
+    background-image: url(images/background_team.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.team h1 {
+    width: 50%;
+    margin: 0 auto 30px auto;
+}
+
+.members {
+    display: flex;
+    justify-content: center;
+}
+
+.person {
+    margin: 0 30px;
+    color: #202427;
+}
+
+.person h3{
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+/*----team------*/
+.about {
+    padding: 0 5%;
+    background-image: url(images/background_about.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 80%;
+    height: 800px;
+    min-height: 800px;
+}
+
+.about h1 {
+    padding-top: 300px;
+    margin-bottom: 20px;
+}
+
+
+.icon img{
+    margin-right: 20px;
+}
+
+.about h1, .icon {
+    margin-left: 50%;
+}
+
+.call-to-action{
+    text-align: center;
+    padding : 120px 5% 150px 5%;
+    background-image: url(images/background_calltoaction.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+}
+
+.call-to-action h1 , .call-to-action a {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 60px;
+}
+
+/*----footer----*/
+footer {
+    padding: 0 5%;
+    margin-bottom: 40px;
+    color: #2b9dff;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+footer a{
+    text-decoration: none;
+    color: #2b9dff;
+    margin-left: 30px;
+}
+
+/*----Responsive----*/
+
+@media (max-width : 500px){
+    header {
+        height: 400px;
+        min-height: 400px;
+        background-size: contain;
+        background-position: right top;
+    }
+
+    header h1 {
+        font-size: 25px;
+        width: 100%;
+        margin-top: 110px;
+    }
+
+    .btn-outline {
+        width: 120px;
+        height: 37px;
+        line-height: 37px;
+    }
+
+    .team {
+        margin-top: 30px;
+    }
+    .team h1 {
+        font-size: 25px;
+    }
+
+    .members {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .person {
+        margin-bottom: 30px;
+    }
+
+    .about {
+        height: 300px;
+        min-height: 300px;
+        background-position: left top;
+    }
+
+    .about h1 {
+        font-size: 25px;
+        padding-top: 50px;
+        margin-bottom: 20px;
+    }
+    .call-to-action h1 {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    .call-to-action{
+        text-align: center;
+        padding : 25px 5% 70px 5%;
+    }
+
+  footer {
+      text-align: center;
+      font-size: 12px;
+      display: flex;
+      flex-direction: column-reverse;
+  }
+
+  footer p {
+      font-size: 10px;
+  }
+
+  .footerpages {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+  }
+
+  footer a {
+      margin-left: 0px;
+  }
+
+ 
+}
